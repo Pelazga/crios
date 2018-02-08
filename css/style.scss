@@ -1,0 +1,261 @@
+@import 'mixins';
+
+@include font-face("Montserrat", fonts/Montserrat, normal, sans-serif, otf);
+@include font-face("Montserrat", fonts/Montserrat, ExtraBold, sans-serif, otf);
+@include font-face("Montserrat", fonts/Montserrat, SemiBold, sans-serif, otf);
+@include font-face("Montserrat", fonts/Montserrat, Bold, sans-serif, otf);
+@include font-face("Montserrat", fonts/Montserrat, Light, sans-serif, otf);
+
+$logo-font-family: "Montserrat", sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 2000px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 240px;
+  padding: 0 265px 0 265px;
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+    box-shadow: 0 0 65px #dae5ef;
+  }
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-top: -206px;
+    padding-bottom: 88px;
+
+    width: 412px;
+    height: 412px;
+
+    border-radius: 50%;
+    box-shadow: 0 0 65px rgba(218, 229, 239, 0.55);
+
+    h1 {
+      text-transform: uppercase;
+      font-family: $logo-font-family;
+      font-weight: normal;
+      font-size: 48px;
+      color: #43a9ff;
+    }
+
+    p {
+      font-family: $logo-font-family;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 18px;
+      color: #4b5863;
+      opacity: 0.15;
+    }
+  }
+}
+
+.baner {
+  width: 100%;
+  height: 1221px;
+
+  padding-top: 140px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url('../img/home__img_bg.png');
+  background-position: 0 325px;
+  background-repeat: no-repeat;
+  background-color: white;
+
+  p{
+    margin-bottom: 85px;
+
+    font-family: $logo-font-family;
+    font-size: 18px;
+    color: rgba(75, 88, 99, 0.25);
+  }
+  &-btn{
+    width: 229px;
+    height: 51px;
+
+    padding: 20px 40px;
+
+    border-radius: 22px;
+
+    font-family: $logo-font-family;
+    font-size: 14px;
+    font-weight: bold;
+    color: #43a9ff;
+    text-transform: uppercase;
+
+    background: white;
+    box-shadow: 0 0 35px rgba(218, 229, 239, 0.35);
+  }
+}
+.h2-costumed{
+  margin-bottom: 26px;
+  font-family: $logo-font-family;
+  font-weight: normal;
+  font-size: 48px;
+  color: black;
+}
+
+.benefit{
+  height: 705px;
+  padding: 68px 265px;
+
+  &-slogan{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+    p{
+      margin-bottom: 24px;
+      font-family: $logo-font-family;
+      font-weight: normal;
+      font-size: 18px;
+      color: #4b5863;
+      opacity: 0.25;
+    }
+  }
+  &-wrap-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.benefit-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 345px;
+  height: 273px;
+  text-align: center;
+
+  img{
+    width: auto;
+    margin-bottom: 38px
+  }
+  h3{
+    font-family: $logo-font-family;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 43px;
+  }
+  p{
+    width: 255px;
+    font-family: $logo-font-family;
+    font-size: 14px;
+    color: #4b5863;
+  }
+}
+.benefit-btn{
+  display: flex;
+  justify-content: center;
+  height: 180px;
+}
+
+.treas {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #f7f8fb;
+
+  &-item {
+  width: 50%;
+  }
+
+  &-text1,
+  &-text2 {
+    padding-top: 195px;
+
+    p {
+      font-family: $logo-font-family;
+      font-size: 16px;
+      line-height: 36px;
+      color: #4b5863;
+      opacity: 0.35;
+    }
+
+  }
+
+  &-text1 {
+    padding-left: 119px;
+    padding-right: 385px;
+  }
+
+  &-text2 {
+    padding-left: 265px;
+    padding-right: 230px;
+  }
+}
+.media{
+  display: flex;
+  flex-wrap: wrap;
+  &-item{
+    width: 50%;
+    height: 1000px;
+  }
+  &-img1{
+    padding-top: 165px;
+    padding-left: 402px;
+
+    background-image: url('../img/media__snowflake.png');
+    background-position: 46px -90px;
+    background-repeat: no-repeat;
+  }
+  &-text1,
+  &-text2{
+    h2{
+      color: #43a9ff;
+    }
+    p{
+    font-family: $logo-font-family;
+    font-size: 16px;
+    line-height: 36px;
+    color: #4b5863;
+    opacity: 0.35;
+    }
+  }
+  &-text1{
+    padding-top: 393px;
+    padding-left: 22px;
+  }
+  &-text2{
+    padding-top: 203px;
+    padding-left: 448px;
+  }
+  &-img2{
+    background-image: url('../img/media__snowflake-2.png');
+    background-position: 338px 203px;
+    background-repeat: no-repeat;
+    img{
+      margin-top: -42px;
+      margin-left: 154px;
+    }
+  }
+}
